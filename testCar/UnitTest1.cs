@@ -5,14 +5,12 @@ namespace testCar
 {
     [TestClass]
     public class UnitTest1
-    {
-        Cars car = new Cars("2.0", "VW", "2007", 108000, 200000);
-
+    { 
         [TestMethod]
         public void enginecap()
         {
             Cars car = new Cars("2.0", "VW", "2007", 108000, 200000);
-            Assert.AreEqual(car[0], "2.0");
+            Assert.AreEqual(car[0], 200000);
         }
         [TestMethod]
         public void model()
